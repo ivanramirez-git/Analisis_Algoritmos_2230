@@ -4,16 +4,16 @@
 using namespace std;
 
 // Comprobar si la suma de dos numeros de una lista tiene un restultado dado
-vector<pair<int,int> >comprobar_suma_dos(vector<int> lista, int valor)
+vector<pair<int, int>> comprobar_suma_dos(vector<int> lista, int valor)
 {
-    vector<pair<int,int> > resultados;
+    vector<pair<int, int>> resultados;
     for (int i = 0; i < lista.size(); i++)
     {
         for (int j = i + 1; j < lista.size(); j++)
         {
             if (lista[i] + lista[j] == valor)
             {
-                resultados.push_back(make_pair(i,j));
+                resultados.push_back(make_pair(i, j));
             }
         }
     }
@@ -61,8 +61,8 @@ void prueba1()
     lista.push_back(27);
     int numero = 74;
 
-    vector<pair<int,int> > resultados = comprobar_suma_dos(lista, numero);
-    if(resultados.size() == 0)
+    vector<pair<int, int>> resultados = comprobar_suma_dos(lista, numero);
+    if (resultados.size() == 0)
     {
         cout << "No hay resultados combinando dos numeros" << endl;
     }
@@ -75,7 +75,7 @@ void prueba1()
     }
 
     vector<vector<int>> resultados_tres = comprobar_suma_tres(lista, numero);
-    if(resultados_tres.size() == 0)
+    if (resultados_tres.size() == 0)
     {
         cout << "No hay resultados combinando tres numeros" << endl;
     }
@@ -86,7 +86,6 @@ void prueba1()
             cout << "(" << lista[resultados_tres[i][0]] << "," << lista[resultados_tres[i][1]] << "," << resultados_tres[i][2] << ")" << endl;
         }
     }
-
 }
 
 // main

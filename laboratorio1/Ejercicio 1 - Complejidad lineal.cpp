@@ -1,8 +1,8 @@
 #include <iostream>
-#include <vector>
 #include <time.h>
-
-using namespace std;
+#include <vector>
+#include <string>
+#include "LibImpresion.h"
 
 // Funcion para calcular la suma de n numeros de forma lineal
 long long int suma_lineal(int n)
@@ -20,7 +20,6 @@ long long int suma_gausiana(int n)
 {
     return (n * (n + ((long long int)1))) / ((long long int)2);
 }
-
 // funcion principal calculando el tiempo en segundos de la suma de n numeros de forma lineal
 int main()
 {
@@ -45,23 +44,23 @@ int main()
         clock_t t_ini = clock();
         resultados_lineal.push_back(suma_lineal(ns[i]));
         clock_t t_fin = clock();
-        t_lineal = (double)(t_fin - t_ini);
+        t_lineal = (double)(t_fin - t_ini) / CLOCKS_PER_SEC;
         tiempos_lineal.push_back(t_lineal);
 
         // calculando el tiempo de suma de n numeros de forma gausiana de ns[0]
         t_ini = clock();
         resultados_gausiana.push_back(suma_gausiana(ns[i]));
         t_fin = clock();
-        t_gausiana = (double)(t_fin - t_ini);
+        t_gausiana = (double)(t_fin - t_ini) / CLOCKS_PER_SEC;
         tiempos_gausiana.push_back(t_gausiana);
     }
     // cabeceras
-    cout << "Datos de entrada\t tiempo suma_lineal\t tiempo suma_constante\t resultado_lineal\t resultado_constante" << endl;
+    // "Datos de entrada\t tiempo suma_lineal\t tiempo suma_constante\t resultado_lineal\t resultado_constante"
+    cout << campoMedio(25, ' ', "Datos de Entrada", ROJO) << "\t" << campoMedio(25, ' ', "Tiempo suma_lineal", AZUL) << "\t" << campoMedio(25, ' ', "Tiempo suma_gausiana", AZUL) << "\t" << campoMedio(25, ' ', "Resultado suma_lineal", AZUL) << "\t" << campoMedio(25, ' ', "Resultado suma_gausiana", AZUL) << endl;
 
     for (int i = 0; i < 4; i++)
     {
-        // imprimir los datos de entrada y el tiempo de suma de n numeros de forma lineal
-        cout << i << "\t\t" << ns[i] << "\t\t" << tiempos_lineal[i] << "\t\t" << tiempos_gausiana[i] << "\t\t" << resultados_lineal[i] << "\t\t" << resultados_gausiana[i] << endl;
+        cout << campoMedio(25, ' ', to_string(ns[i]), ROJO) << "\t" << campoMedio(25, ' ', to_string(tiempos_lineal[i]), AZUL) << "\t" << campoMedio(25, ' ', to_string(tiempos_gausiana[i]), AZUL) << "\t" << campoMedio(25, ' ', to_string(resultados_lineal[i]), AZUL) << "\t" << campoMedio(25, ' ', to_string(resultados_gausiana[i]), AZUL) << endl;
     }
     return 0;
 }
