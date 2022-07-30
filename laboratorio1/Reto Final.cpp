@@ -74,7 +74,7 @@ void Iniciar(int cantidad)
     cabecera.push_back("Impuestos");
     // Imprimir datos
     vector<vector<string>> datos;
-    for (int i = 0; i < cantidad; i++)
+    for (int i = 0; i <= cantidad; i++)
     {
         vector<string> dato;
         dato.push_back(to_string(generarIndicativo(i != 0 ? stoi(datos[i - 1][0]) : 0)));
@@ -113,7 +113,7 @@ void Iniciar(int cantidad)
             else
             {
                 cout << "Posicion: " << posicion << endl;
-                datoMedio(cabecera, datos[posicion], AZUL, VERDE);
+                datoMedio(cabecera, datos[posicion], AZUL, VERDE, true);
             }
             break;
         }
@@ -130,7 +130,7 @@ void Iniciar(int cantidad)
             else
             {
                 cout << "Posicion: " << posicion << endl;
-                datoMedio(cabecera, datos[posicion], AZUL, VERDE);
+                datoMedio(cabecera, datos[posicion], AZUL, VERDE, true);
             }
             break;
         }
@@ -152,9 +152,11 @@ void Iniciar(int cantidad)
                     cout << posiciones[i] << " ";
                 }
                 cout << endl;
+                bool imprimirCabecera = true;
                 for (int i = 0; i < posiciones.size(); i++)
                 {
-                    datoMedio(cabecera, datos[posiciones[i]], AZUL, VERDE);
+                    datoMedio(cabecera, datos[posiciones[i]], AZUL, VERDE, imprimirCabecera);
+                    imprimirCabecera = false;
                 }
             }
             break;
@@ -205,27 +207,38 @@ vector<int> buscarVariosNombres(vector<vector<string>> datos, string nombre)
     return posiciones;
 }
 
-int buscarIndicador(vector<vector<string>> datos, string indicador)
+// funcion aux para buscar por indicador de forma recursiva busqueda binaria
+int buscarIndicadorAux(vector<vector<string>> datos, string indicador, int inicio, int fin)
 {
     int posicion = -1;
-    for (int i = 0; i < datos.size(); i++)
+    if (inicio <= fin)
     {
-        if (datos[i][0] == indicador)
+        int medio = (inicio + fin) / 2;
+        if (datos[medio][0] == indicador)
         {
-            posicion = i;
-            break;
+            posicion = medio;
+        }
+        else if (stoi(datos[medio][0]) > stoi(indicador))
+        {
+            posicion = buscarIndicadorAux(datos, indicador, inicio, medio - 1);
+        }
+        else
+        {
+            posicion = buscarIndicadorAux(datos, indicador, medio + 1, fin);
         }
     }
     return posicion;
 }
 
+int buscarIndicador(vector<vector<string>> datos, string indicador)
+{
+    return buscarIndicadorAux(datos, indicador, 0, datos.size() - 1);
+}
+
 void imprimirRango(vector<string> cabecera, vector<vector<string>> datos, int inicio, int fin)
 {
-    for (int i = inicio; i <= fin; i++)
-    {
-        // void tablaMediaDesdeHasta(int columnas, int filas, std::vector<std::string> cabecera, std::vector<std::vector<std::string>> datos, std::string COLOR_CABECERA, std::string COLOR_DATOS, int desde, int hasta)
-        tablaMediaDesdeHasta(4, fin - inicio + 1, cabecera, datos, AZUL, VERDE, i, i);
-    }
+    // void tablaMediaDesdeHasta(int columnas, int filas, std::vector<std::string> cabecera, std::vector<std::vector<std::string>> datos, std::string COLOR_CABECERA, std::string COLOR_DATOS, int desde, int hasta)
+    tablaMediaDesdeHasta(4, fin - inicio + 1, cabecera, datos, AZUL, VERDE, inicio, fin);
 }
 
 int menu()

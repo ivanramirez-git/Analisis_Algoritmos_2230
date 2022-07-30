@@ -106,7 +106,7 @@ void tablaMediaDesdeHasta(int columnas, int filas, vector<string> cabecera, vect
     }
 }
 
-void datoMedio(vector<string> cabecera, vector<string> dato, string COLOR_CABECERA, string COLOR_DATOS)
+void datoMedio(vector<string> cabecera, vector<string> dato, string COLOR_CABECERA, string COLOR_DATOS, bool imprimirCabecera)
 {
     // calcular cual es el tamaño de la mayor cadena de la cabecera
     int espacios = 0;
@@ -117,15 +117,16 @@ void datoMedio(vector<string> cabecera, vector<string> dato, string COLOR_CABECE
             espacios = cabecera[i].size();
         }
     }
-    // Imprimir cabecera
-    for (int i = 0; i < cabecera.size(); i++)
-    {
-        std::cout << campoMedio(espacios, ' ', cabecera[i], COLOR_CABECERA);
-        if (i < cabecera.size() - 1)
+    if (imprimirCabecera)
+        // Imprimir cabecera
+        for (int i = 0; i < cabecera.size(); i++)
         {
-            std::cout << "|";
+            std::cout << campoMedio(espacios, ' ', cabecera[i], COLOR_CABECERA);
+            if (i < cabecera.size() - 1)
+            {
+                std::cout << "|";
+            }
         }
-    }
     std::cout << endl;
     // Imprimir datos
     for (int i = 0; i < dato.size(); i++)
