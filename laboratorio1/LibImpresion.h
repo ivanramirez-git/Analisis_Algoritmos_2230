@@ -118,6 +118,7 @@ void datoMedio(vector<string> cabecera, vector<string> dato, string COLOR_CABECE
         }
     }
     if (imprimirCabecera)
+    {
         // Imprimir cabecera
         for (int i = 0; i < cabecera.size(); i++)
         {
@@ -127,7 +128,8 @@ void datoMedio(vector<string> cabecera, vector<string> dato, string COLOR_CABECE
                 std::cout << "|";
             }
         }
-    std::cout << endl;
+        std::cout << endl;
+    }
     // Imprimir datos
     for (int i = 0; i < dato.size(); i++)
     {

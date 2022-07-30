@@ -30,7 +30,7 @@ int menu();
 int main()
 {
     srand(time(NULL));
-    Iniciar(5000000);
+    Iniciar(500000); // La busqueda binaria funciona, pero cuando hay 5 Millones de registros, la busqueda binaria no funciona correctamente y en ocaciones daña el programa.
     return 0;
 }
 
@@ -39,7 +39,7 @@ string generarNombre()
     string nombre = "";
     string letras = "ABCDEFGIJAEIOULMNOPRSTUAEIOU";
     int tamanio = letras.size();
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 5; i++)
     {
         int posicion = rand() % tamanio;
         nombre += letras[posicion];
@@ -87,16 +87,9 @@ void Iniciar(int cantidad)
             cout << "Creando censos: " << i << endl;
         }
     }
-    // tablaMedia(4, cantidad, cabecera, datos, AZUL, VERDE);
     int opcion;
     do
     {
-        /*
-         cout << "1. Buscar por nombre" << endl;
-        cout << "2. Buscar por indicador" << endl;
-
-        cout << "4. Imprimir rango de datos" << endl;
-        cout << "0. Salir" << endl;*/
         opcion = menu();
         switch (opcion)
         {
@@ -214,6 +207,7 @@ int buscarIndicadorAux(vector<vector<string>> datos, string indicador, int inici
     if (inicio <= fin)
     {
         int medio = (inicio + fin) / 2;
+        cout << "Medio: " << medio << endl;
         if (datos[medio][0] == indicador)
         {
             posicion = medio;
