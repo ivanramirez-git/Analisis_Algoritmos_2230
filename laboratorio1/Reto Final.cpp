@@ -24,6 +24,7 @@ void Iniciar(int cantidad);
 int buscarNombre(vector<vector<string>> datos, string nombre);                                  // Búsqueda Lineal
 vector<int> buscarVariosNombres(vector<vector<string>> datos, string nombre);                   // Búsqueda Lineal con varios nombres
 int buscarIndicador(vector<vector<string>> datos, string indicador);                            // Búsqueda Binaria
+int buscarIndicadorWhile(vector<vector<string>> datos, string indicador);                       // Búsqueda Binaria con While
 void imprimirRango(vector<string> cabecera, vector<vector<string>> datos, int inicio, int fin); // Imprimir rango de registros
 int menu();
 
@@ -115,7 +116,8 @@ void Iniciar(int cantidad)
             string indicador;
             cout << "Ingrese indicador: ";
             cin >> indicador;
-            int posicion = buscarIndicador(datos, indicador);
+            // int posicion = buscarIndicador(datos, indicador);
+            int posicion = buscarIndicadorWhile(datos, indicador);
             if (posicion == -1)
             {
                 cout << "No se encontro el indicador" << endl;
@@ -227,6 +229,32 @@ int buscarIndicadorAux(vector<vector<string>> datos, string indicador, int inici
 int buscarIndicador(vector<vector<string>> datos, string indicador)
 {
     return buscarIndicadorAux(datos, indicador, 0, datos.size() - 1);
+}
+
+int buscarIndicadorWhile(vector<vector<string>> datos, string indicador)
+{
+    int posicion = -1;
+    int inicio = 0;
+    int fin = datos.size() - 1;
+    while (inicio <= fin)
+    {
+        int medio = (inicio + fin) / 2;
+        cout << "Medio: " << medio << endl;
+        if (datos[medio][0] == indicador)
+        {
+            posicion = medio;
+            break;
+        }
+        else if (stoi(datos[medio][0]) > stoi(indicador))
+        {
+            fin = medio - 1;
+        }
+        else
+        {
+            inicio = medio + 1;
+        }
+    }
+    return posicion;
 }
 
 void imprimirRango(vector<string> cabecera, vector<vector<string>> datos, int inicio, int fin)
