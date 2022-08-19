@@ -31,7 +31,7 @@ int menu();
 int main()
 {
     srand(time(NULL));
-    Iniciar(500000); // La busqueda binaria funciona, pero cuando hay 5 Millones de registros, la busqueda binaria no funciona correctamente y en ocaciones daña el programa.
+    Iniciar(5000000); // La busqueda binaria recursiva funciona, pero cuando hay 5 Millones de registros, la busqueda binaria recursiva no funciona correctamente y en ocaciones daña el programa. Esta definida la busqueda binaria con while por defecto.
     return 0;
 }
 
@@ -117,7 +117,7 @@ void Iniciar(int cantidad)
             cout << "Ingrese indicador: ";
             cin >> indicador;
             // int posicion = buscarIndicador(datos, indicador);
-            int posicion = buscarIndicadorWhile(datos, indicador);
+            int posicion = buscarIndicadorWhile(datos, indicador); // Aqui se puede cambiar el tipo de busqueda binaria por while o recursiva.
             if (posicion == -1)
             {
                 cout << "No se encontro el indicador" << endl;
@@ -159,9 +159,9 @@ void Iniciar(int cantidad)
         case 4:
         {
             int inicio, fin;
-            cout << "Ingrese idice inicial: ";
+            cout << "Ingrese indice inicial: ";
             cin >> inicio;
-            cout << "Ingrese idice final: ";
+            cout << "Ingrese indice final: ";
             cin >> fin;
             imprimirRango(cabecera, datos, inicio, fin);
             break;
