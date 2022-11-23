@@ -23,9 +23,122 @@ public class Tablero extends Thread implements Serializable {
     private JPanel panel;
     private JTable tabla;
 
+    public void refreshPanel() {
+        tabla.setModel(new javax.swing.table.DefaultTableModel(
+                new Object[][] {
+                        { tablero[0][0], tablero[0][1], tablero[0][2], tablero[0][3], tablero[0][4] },
+                        { tablero[1][0], tablero[1][1], tablero[1][2], tablero[1][3], tablero[1][4] },
+                        { tablero[2][0], tablero[2][1], tablero[2][2], tablero[2][3], tablero[2][4] },
+                        { tablero[3][0], tablero[3][1], tablero[3][2], tablero[3][3], tablero[3][4] },
+                        { tablero[4][0], tablero[4][1], tablero[4][2], tablero[4][3], tablero[4][4] }
+                },
+                new String[] {
+                        "B", "I", "N", "G", "O"
+                }));
+        // si un numero esta en la lista de numeros, cambiar el color de la celda a
+        // rojo con bold
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                for (int k = 0; k < numeros.length; k++) {
+                    if (tablero[i][j] == numeros[k]) {
+                        // Cuadrado verde
+                        tabla.setValueAt("<html><font color='red'><b>" + tablero[i][j] + "</b></font></html>", i, j);
+                    }
+                }
+            }
+        }
+
+        // hacer que la celda de cada tabla sea de 30x30
+        tabla.setRowHeight(30);
+        tabla.setRowSelectionAllowed(false);
+        tabla.setCellSelectionEnabled(true);
+        tabla.setShowGrid(false);
+        tabla.setShowHorizontalLines(true);
+        tabla.setShowVerticalLines(true);
+        // Centrar el texto de las celdas
+        DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+        centerRenderer.setHorizontalAlignment(JLabel.CENTER);
+        for (int i = 0; i < 5; i++) {
+            tabla.getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
+        }
+        // hacer que cada columna tenga el mismo ancho de celda (30)
+        for (int i = 0; i < 5; i++) {
+            TableColumn column = tabla.getColumnModel().getColumn(i);
+            column.setPreferredWidth(30);
+        }
+    }
+
+    public JPanel getPanel() {
+        return this.panel;
+    }
+
+    public Tablero(int id, Estado estado) {
+        tablero = new int[5][5];
+        numeros = new int[26];
+        this.id = id;
+        this.estado = estado;
+        this.indexNumeros = 1;
+        this.tabla = new JTable();
+        this.panel = new JPanel();
+        this.panel.add(tabla);
+        this.panel.setVisible(true);
+        generarTableroAleatorio();
+        this.start();
+    }
+
+    @Override
+    public void run() {
+        // si en el estado el numero currentNumber es igual a un numero del tablero,
+        // agregar a la lista de numeros
+        while (true) {
+            if (estado.get("currentNumber") != null) {
+                int numero = (int) estado.get("currentNumber");
+                for (int i = 0; i < 5; i++) {
+                    for (int j = 0; j < 5; j++) {
+                        // validar que no este en la lista de numeros
+                        if (tablero[i][j] == numero) {
+                            boolean existe = false;
+                            for (int k = 0; k < numeros.length; k++) {
+                                if (numeros[k] == numero) {
+                                    existe = true;
+                                    break;
+                                }
+                            }
+                            if (!existe) {
+                                numeros[indexNumeros] = numero;
+                                indexNumeros++;
+                                // actualizar panel
+                                refreshPanel();
+                                // verificar si es ganador
+                                verificarGanador();
+                            }
+                        }
+                    }
+                }
+            }
+            try {
+
+                Thread.sleep(150);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
     // Si este tablero es ganador, agregar a la lista de ganadores del estado el id
     // de este tablero
     public void verificarGanador() {
+        /*
+         * % resume = {
+         * % name: verificarGanador,
+         * % type: void,
+         * % visibility: public,
+         * % parameters: [],
+         * % description: Valida si el tablero actual es ganador, si lo es, se agrega a
+         * la lista de ganadores del estado
+         * % }
+         */
 
         // Un jugador puede ganar llenando cualquier fila, columna, diagonales o cuatro
         // esquinas solamente, los numeros que se encuentran en el centro no cuentan
@@ -132,116 +245,18 @@ public class Tablero extends Thread implements Serializable {
         }
     }
 
-    public void refreshPanel() {
-        tabla.setModel(new javax.swing.table.DefaultTableModel(
-                new Object[][] {
-                        { tablero[0][0], tablero[0][1], tablero[0][2], tablero[0][3], tablero[0][4] },
-                        { tablero[1][0], tablero[1][1], tablero[1][2], tablero[1][3], tablero[1][4] },
-                        { tablero[2][0], tablero[2][1], tablero[2][2], tablero[2][3], tablero[2][4] },
-                        { tablero[3][0], tablero[3][1], tablero[3][2], tablero[3][3], tablero[3][4] },
-                        { tablero[4][0], tablero[4][1], tablero[4][2], tablero[4][3], tablero[4][4] }
-                },
-                new String[] {
-                        "B", "I", "N", "G", "O"
-                }));
-        // si un numero esta en la lista de numeros, cambiar el color de la celda a
-        // rojo con bold
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
-                for (int k = 0; k < numeros.length; k++) {
-                    if (tablero[i][j] == numeros[k]) {
-                        // Cuadrado verde
-                        tabla.setValueAt("<html><font color='red'><b>" + tablero[i][j] + "</b></font></html>", i, j);
-                    }
-                }
-            }
-        }
-        
-        // hacer que la celda de cada tabla sea de 30x30
-        tabla.setRowHeight(30);
-        tabla.setRowSelectionAllowed(false);
-        tabla.setCellSelectionEnabled(true);
-        tabla.setShowGrid(false);
-        tabla.setShowHorizontalLines(true);
-        tabla.setShowVerticalLines(true);
-        // Centrar el texto de las celdas
-        DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
-        centerRenderer.setHorizontalAlignment(JLabel.CENTER);
-        for (int i = 0; i < 5; i++) {
-            tabla.getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
-        }
-        // hacer que cada columna tenga el mismo ancho de celda (30)
-        for (int i = 0; i < 5; i++) {
-            TableColumn column = tabla.getColumnModel().getColumn(i);
-            column.setPreferredWidth(30);
-        }
-    }
-
-    public JPanel getPanel() {
-        return this.panel;
-    }
-
-    public Tablero(int id, Estado estado) {
-        tablero = new int[5][5];
-        numeros = new int[26];
-        this.id = id;
-        this.estado = estado;
-        this.indexNumeros = 1;
-        this.tabla = new JTable();
-        this.panel = new JPanel();
-        this.panel.add(tabla);
-        this.panel.setVisible(true);
-        generarTableroAleatorio();
-        this.start();
-    }
-
-    @Override
-    public void run() {
-        // si en el estado el numero currentNumber es igual a un numero del tablero,
-        // agregar a la lista de numeros
-        while (true) {
-            if (estado.get("currentNumber") != null) {
-                int numero = (int) estado.get("currentNumber");
-                for (int i = 0; i < 5; i++) {
-                    for (int j = 0; j < 5; j++) {
-                        // validar que no este en la lista de numeros
-                        if (tablero[i][j] == numero) {
-                            boolean existe = false;
-                            for (int k = 0; k < numeros.length; k++) {
-                                if (numeros[k] == numero) {
-                                    existe = true;
-                                    break;
-                                }
-                            }
-                            if (!existe) {
-                                numeros[indexNumeros] = numero;
-                                indexNumeros++;
-                                // actualizar panel
-                                refreshPanel();
-                                // verificar si es ganador
-                                verificarGanador();
-                            }
-                        }
-                    }
-                }
-            }
-            try {
-
-                Thread.sleep(150);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    // Metodo privado para generar un numero aleatorio
-    private int generarNumeroAleatorio(int minimo, int maximo) {
-        Random random = new Random();
-        return random.nextInt(maximo - minimo + 1) + minimo;
-    }
-
     // Metodo privado para generar un tablero aleatorio
     private void generarTableroAleatorio() {
+        /*
+          % resume = {
+          % name: generarTableroAleatorio,
+          % type: void,
+          % visibility: private,
+          % parameters: [],
+          % description: Genera un tablero aleatorio
+          % }
+         * 
+         */
         /*
          * o En la primera columna solo se pueden asignar números del 1 al 15.
          * o En la segunda, números del 16 al 30.
@@ -313,6 +328,16 @@ public class Tablero extends Thread implements Serializable {
 
     // Metodo privado para verificar si un numero esta repetido en el tablero
     private boolean estaRepetido(int numero) {
+        /*
+          % resume = {
+          % name: estaRepetido,
+          % type: boolean,
+          % visibility: private,
+          % parameters: [numero],
+          % description: Verifica si un numero esta repetido en el tablero
+          % }
+         * 
+         */
         // Recorre el arreglo de numeros
         for (int i = 0; i < 5; i++) {
             // Recorre el arreglo de numeros
@@ -324,6 +349,25 @@ public class Tablero extends Thread implements Serializable {
             }
         }
         return false;
+    }
+
+    
+    // Metodo privado para generar un numero aleatorio
+    private int generarNumeroAleatorio(int minimo, int maximo) {
+
+        /*
+          % resume = {
+          % name: generarNumeroAleatorio,
+          % type: int,
+          % visibility: private,
+          % parameters: [minimo, maximo],
+          % description: Genera un numero aleatorio entre minimo y maximo
+          % }
+         * 
+         */
+
+        Random random = new Random();
+        return random.nextInt(maximo - minimo + 1) + minimo;
     }
 
     // Metodo para obtener el tablero
