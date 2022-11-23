@@ -1,0 +1,10 @@
+\backcite {}{{1}{2}{figure.1}}
+\backcite {}{{1}{2.1}{subsection.2.1}}
+\backcite {}{{1}{2.1}{subsection.2.1}}
+\backcite {}{{2}{2.1}{figure.2}}
+\backcite {}{{2}{1}{table.1}}
+\backcite {}{{4}{4}{section.4}}
+\backcite {}{{4}{4}{section.4}}
+\backcite {}{{4}{4.1}{subsection.4.1}}
+\backcite {}{{4}{4.1}{subsection.4.1}}
+\backcite {}{{5}{12}{figure.12}}

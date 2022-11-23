@@ -1,0 +1,683 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  6 DEC 2021 09:51
+entering extended mode
+**./main.tex
+(main.tex
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-08-27>
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count182
+\c@section=\count183
+\c@subsection=\count184
+\c@subsubsection=\count185
+\c@paragraph=\count186
+\c@subparagraph=\count187
+\c@figure=\count188
+\c@table=\count189
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2021/07/22 3.63 The Babel package
+
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
+File: babel.def 2021/07/22 3.63 Babel common definitions
+\babel@savecnt=\count190
+\U@D=\dimen139
+\l@unhyphenated=\language79
+
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count191
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.l
+df
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks18
+\es@quotdepth=\count192
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making . an active character on input line 675.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
+))
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2021/04/20 v2.17j AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen140
+))
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen141
+)
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count193
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count194
+\leftroot@=\count195
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count196
+\DOTSCASE@=\count197
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen142
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count198
+\c@MaxMatrixCols=\count199
+\dotsspace@=\muskip16
+\c@parentequation=\count266
+\dspbrk@lvl=\count267
+\tag@help=\toks20
+\row@=\count268
+\column@=\count269
+\maxfields@=\count270
+\andhelp@=\toks21
+\eqnshift@=\dimen143
+\alignsep@=\dimen144
+\tagshift@=\dimen145
+\tagwidth@=\dimen146
+\totwidth@=\dimen147
+\lineht@=\dimen148
+\@envbody=\toks22
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks24
+)
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
+)
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count271
+\Gm@cntv=\count272
+\c@Gm@tempcnt=\count273
+\Gm@bindingoffset=\dimen151
+\Gm@wd@mp=\dimen152
+\Gm@odd@mp=\dimen153
+\Gm@even@mp=\dimen154
+\Gm@layoutwidth=\dimen155
+\Gm@layoutheight=\dimen156
+\Gm@layouthoffset=\dimen157
+\Gm@layoutvoffset=\dimen158
+\Gm@dimlist=\toks25
+
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count274
+\lst@gtempboxa=\box52
+\lst@token=\toks26
+\lst@length=\count275
+\lst@currlwidth=\dimen159
+\lst@column=\count276
+\lst@pos=\count277
+\lst@lostspace=\dimen160
+\lst@width=\dimen161
+\lst@newlines=\count278
+\lst@lineno=\count279
+\lst@maxwidth=\dimen162
+
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count280
+\lst@skipnumbers=\count281
+\lst@framebox=\box53
+)
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
+
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+) (C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count282
+\l__pdf_internal_box=\box54
+) (main.aux
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
+
+
+LaTeX Warning: Label `eficiencia' multiply defined.
+
+
+LaTeX Warning: Label `eficiencia' multiply defined.
+
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
+
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count283
+\scratchdimen=\dimen163
+\scratchbox=\box55
+\nofMPsegments=\count284
+\nofMParguments=\count285
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count286
+\MPscratchDim=\dimen164
+\MPnumerator=\count287
+\makeMPintoPDFobject=\count288
+\everyMPtoPDFconversion=\toks28
+)
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=500.484pt
+* \textheight=681.15898pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count289
+LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
+
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
+
+
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+
+ []
+
+<arreglo_pv.png, id=1, 429.10312pt x 185.19188pt>
+File: arreglo_pv.png Graphic file (type png)
+<use arreglo_pv.png>
+Package pdftex.def Info: arreglo_pv.png  used on input line 67.
+(pdftex.def)             Requested size: 250.24199pt x 107.99911pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 67--68
+ [][] 
+ []
+
+[1{C:/Users/cdani/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+
+
+ <./arreglo_pv.png>]
+<modelo_5parametros.png, id=15, 438.8897pt x 247.67531pt>
+File: modelo_5parametros.png Graphic file (type png)
+<use modelo_5parametros.png>
+Package pdftex.def Info: modelo_5parametros.png  used on input line 88.
+(pdftex.def)             Requested size: 200.19054pt x 112.97209pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<VI_CURVA.jpg, id=16, 1743.51375pt x 473.77pt>
+File: VI_CURVA.jpg Graphic file (type jpg)
+<use VI_CURVA.jpg>
+Package pdftex.def Info: VI_CURVA.jpg  used on input line 128.
+(pdftex.def)             Requested size: 250.24199pt x 67.99727pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 128--129
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<PV_CURVA.jpg, id=17, 1766.6pt x 417.56pt>
+File: PV_CURVA.jpg Graphic file (type jpg)
+<use PV_CURVA.jpg>
+Package pdftex.def Info: PV_CURVA.jpg  used on input line 135.
+(pdftex.def)             Requested size: 250.24199pt x 59.1461pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 135--136
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1960) has occurred while \output is active []
+
+<pv_system_full.png, id=18, 395.22656pt x 141.52875pt>
+File: pv_system_full.png Graphic file (type png)
+<use pv_system_full.png>
+Package pdftex.def Info: pv_system_full.png  used on input line 146.
+(pdftex.def)             Requested size: 250.24199pt x 89.6106pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 146--147
+ [][] 
+ []
+
+<circuito_boost.png, id=19, 293.59688pt x 148.30406pt>
+File: circuito_boost.png Graphic file (type png)
+<use circuito_boost.png>
+Package pdftex.def Info: circuito_boost.png  used on input line 155.
+(pdftex.def)             Requested size: 200.19054pt x 101.12149pt.
+[2 <./modelo_5parametros.png> <./VI_CURVA.jpg> <./PV_CURVA.jpg> <./pv_system_fu
+ll.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+<circuito_Boost_lazoabierto.png, id=32, 836.3747pt x 288.3272pt>
+File: circuito_Boost_lazoabierto.png Graphic file (type png)
+<use circuito_Boost_lazoabierto.png>
+Package pdftex.def Info: circuito_Boost_lazoabierto.png  used on input line 226
+.
+(pdftex.def)             Requested size: 250.24199pt x 86.26564pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 226--227
+ [][] 
+ []
+
+<curvas_lazoabierto.png, id=33, 957.5775pt x 490.83376pt>
+File: curvas_lazoabierto.png Graphic file (type png)
+<use curvas_lazoabierto.png>
+Package pdftex.def Info: curvas_lazoabierto.png  used on input line 233.
+(pdftex.def)             Requested size: 250.24199pt x 128.26535pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 233--234
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<circuito_Boost_lazoabierto_pv.png, id=34, 807.7678pt x 304.88907pt>
+File: circuito_Boost_lazoabierto_pv.png Graphic file (type png)
+<use circuito_Boost_lazoabierto_pv.png>
+Package pdftex.def Info: circuito_Boost_lazoabierto_pv.png  used on input line 
+247.
+(pdftex.def)             Requested size: 250.24199pt x 94.4495pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 247--248
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<curvas_lazoabierto_pv.png, id=35, 953.81343pt x 494.59781pt>
+File: curvas_lazoabierto_pv.png Graphic file (type png)
+<use curvas_lazoabierto_pv.png>
+Package pdftex.def Info: curvas_lazoabierto_pv.png  used on input line 254.
+(pdftex.def)             Requested size: 250.24199pt x 129.76216pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 254--255
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<curvas2_lazoabierto_pv.png, id=36, 959.08313pt x 493.845pt>
+File: curvas2_lazoabierto_pv.png Graphic file (type png)
+<use curvas2_lazoabierto_pv.png>
+Package pdftex.def Info: curvas2_lazoabierto_pv.png  used on input line 261.
+(pdftex.def)             Requested size: 250.24199pt x 128.84879pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 261--262
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--266
+[]\OT1/cmr/bx/n/14.4 Seguimiento del pun-to de
+ []
+
+[3 <./circuito_boost.png> <./circuito_Boost_lazoabierto.png>]
+<po_algor.png, id=44, 344.03531pt x 354.57469pt>
+File: po_algor.png Graphic file (type png)
+<use po_algor.png>
+Package pdftex.def Info: po_algor.png  used on input line 288.
+(pdftex.def)             Requested size: 250.24199pt x 257.90678pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 288--289
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<po_operacion.png, id=45, 322.95656pt x 222.07968pt>
+File: po_operacion.png Graphic file (type png)
+<use po_operacion.png>
+Package pdftex.def Info: po_operacion.png  used on input line 295.
+(pdftex.def)             Requested size: 250.24199pt x 172.07608pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 295--296
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<mppt_DUTY.png, id=46, 770.88pt x 453.19313pt>
+File: mppt_DUTY.png Graphic file (type png)
+<use mppt_DUTY.png>
+Package pdftex.def Info: mppt_DUTY.png  used on input line 302.
+(pdftex.def)             Requested size: 175.17244pt x 102.98058pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 <./curvas_lazoabierto.png> <./circuito_Boost_lazoabierto_pv.png> <./curvas_l
+azoabierto_pv.png> <./curvas2_lazoabierto_pv.png>]
+Overfull \vbox (0.65166pt too high) has occurred while \output is active []
+
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 3
+41.
+
+(C:\Users\cdani\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
+File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 341.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./po_algor.png> <./po_operacion.png> <./mppt_DUTY.png>]
+<boost_parasito.png, id=61, 379.4175pt x 117.43875pt>
+File: boost_parasito.png Graphic file (type png)
+<use boost_parasito.png>
+Package pdftex.def Info: boost_parasito.png  used on input line 378.
+(pdftex.def)             Requested size: 250.24199pt x 77.45782pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 378--379
+ [][] 
+ []
+
+<converter2.png, id=62, 816.80156pt x 377.91188pt>
+File: converter2.png Graphic file (type png)
+<use converter2.png>
+Package pdftex.def Info: converter2.png  used on input line 389.
+(pdftex.def)             Requested size: 250.24199pt x 115.77905pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 389--390
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 396--397
+[]\OT1/cmr/m/n/10 El al-go-rit-mo MPPT de-ter-mi-na los MPPs por la
+ []
+
+File: converter2.png Graphic file (type png)
+<use converter2.png>
+Package pdftex.def Info: converter2.png  used on input line 400.
+(pdftex.def)             Requested size: 250.24199pt x 115.77905pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 400--401
+ [][] 
+ []
+
+<curvas1.png, id=63, 959.83594pt x 490.08093pt>
+File: curvas1.png Graphic file (type png)
+<use curvas1.png>
+Package pdftex.def Info: curvas1.png  used on input line 407.
+(pdftex.def)             Requested size: 250.24199pt x 127.7695pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 407--408
+ [][] 
+ []
+
+<potencia.png, id=64, 690.32906pt x 282.30469pt>
+File: potencia.png Graphic file (type png)
+<use potencia.png>
+Package pdftex.def Info: potencia.png  used on input line 416.
+(pdftex.def)             Requested size: 250.24199pt x 102.33604pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 416--417
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<potencia_curvas.png, id=65, 959.83594pt x 490.83376pt>
+File: potencia_curvas.png Graphic file (type png)
+<use potencia_curvas.png>
+Package pdftex.def Info: potencia_curvas.png  used on input line 423.
+(pdftex.def)             Requested size: 250.24199pt x 127.96576pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 423--424
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<eficiencia2.png, id=66, 506.6428pt x 135.50626pt>
+File: eficiencia2.png Graphic file (type png)
+<use eficiencia2.png>
+Package pdftex.def Info: eficiencia2.png  used on input line 432.
+(pdftex.def)             Requested size: 250.24199pt x 66.92795pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 432--433
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<eficiencia.png, id=67, 963.6pt x 161.85469pt>
+File: eficiencia.png Graphic file (type png)
+<use eficiencia.png>
+Package pdftex.def Info: eficiencia.png  used on input line 439.
+(pdftex.def)             Requested size: 250.24199pt x 42.03181pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 439--440
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<potencia_curvas_2.png, id=68, 963.6pt x 490.08093pt>
+File: potencia_curvas_2.png Graphic file (type png)
+<use potencia_curvas_2.png>
+Package pdftex.def Info: potencia_curvas_2.png  used on input line 448.
+(pdftex.def)             Requested size: 250.24199pt x 127.26848pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 448--449
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./boost_parasito.png> <./converter2.png> <./curvas1.png>] [7 <./potencia.pn
+g> <./potencia_curvas.png> <./eficiencia2.png> <./eficiencia.png> <./potencia_c
+urvas_2.png>] (main.bbl
+Underfull \hbox (badness 2538) in paragraph at lines 64--68
+[]\OT1/cmr/m/n/10 A. Tobon, J. Pelaez-Restrepo, J. P. Villegas-
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 64--68
+\OT1/cmr/m/n/10 Ceballos, S. I. Serna-Garces, J. He-rre-ra, and
+ []
+
+) [8] (main.aux
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
+)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6852 strings out of 478927
+ 97512 string characters out of 2852534
+ 786676 words of memory out of 3000000
+ 24617 multiletter control sequences out of 15000+600000
+ 414479 words of font info for 69 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,11n,66p,633b,2125s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\cdani\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1000.pk><C:/Users/cdani/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/cdani/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Users/cdani/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmbx9.pfb><C:/Users/cdani/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/cdani/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/cdani/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/cdani/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/c
+dani/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
+/Users/cdani/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><C:/Users/cdani/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr5.pfb><C:/Users/cdani/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr7.pfb><C:/Users/cdani/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr9.pfb><C:/Users/cdani/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cdani/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/cdani/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cdani/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on main.pdf (8 pages, 1066494 bytes).
+PDF statistics:
+ 158 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+

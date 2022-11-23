@@ -1,0 +1,81 @@
+\begin{thebibliography}{10}
+
+\bibitem{diaz2007analisis}
+H.~Diaz~Narv{\'a}ez, F.~Diez~Cardona, {\em et~al.}, ``An{\'a}lisis, modelado,
+  simulaci{\'o}n y validaci{\'o}n de un sistema de generaci{\'o}n de
+  energ{\'\i}a solar aut{\'o}nomo caso: Universidad aut{\'o}noma de
+  occidente,'' {B.S.} thesis, Universidad Aut{\'o}noma de Occidente, 2007.
+
+\bibitem{gonzalez2013estudio}
+F.~A.~L. Gonz{\'a}lez and M.~M.~H. Cely, ``Estudio del potencial e{\'o}lico y
+  solar de c{\'u}cuta, norte de santander,'' {\em REVISTA COLOMBIANA DE
+  TECNOLOGIAS DE AVANZADA (RCTA)}, vol.~2, no.~22, pp.~27--33, 2013.
+
+\bibitem{garcia2017modulo}
+A.~P. Garc{\'\i}a, C.~A.~V. Herrera, and I.~T. Ch{\'a}vez, ``M{\'o}dulo
+  rob{\'o}tico de seguimiento solar usando mppt supervisado y controlado
+  v{\'\i}a ethernet,'' {\em REVISTA COLOMBIANA DE TECNOLOGIAS DE AVANZADA
+  (RCTA)}, vol.~1, no.~23, pp.~112--119, 2017.
+
+\bibitem{kotla2020mathematical}
+R.~W. Kotla and S.~R. Yarlagadda, ``Mathematical modelling of spv array by
+  considering the parasitic effects,'' {\em SN Applied Sciences}, vol.~2,
+  no.~1, pp.~1--10, 2020.
+
+\bibitem{sreega2017design}
+R.~Sreega, K.~Nithyananthan, and B.~Nandhini, ``Design and development of
+  automated solar panel cleaner and cooler,'' {\em Int. J. Electr. Electron.
+  Eng}, vol.~9, pp.~186--197, 2017.
+
+\bibitem{shongwe2015comparative}
+S.~Shongwe and M.~Hanif, ``Comparative analysis of different single-diode pv
+  modeling methods,'' {\em IEEE Journal of photovoltaics}, vol.~5, no.~3,
+  pp.~938--946, 2015.
+
+\bibitem{vera2013maximum}
+J.~Vera and M.~Ferreira, ``Maximum power point tracker shaded condition,'' in
+  {\em Facultad de Ingenir{\'\i}a, Pontificia Universidad Javeriana}, 2013.
+
+\bibitem{riveracontrol}
+M.~Rivera~Montezuma, {\em Control por modos deslizantes aplicado a un inversor
+  de fuente de corriente monof{\'a}sico conectado a la red}.
+\newblock PhD thesis, Universidad Nacional de Colombia.
+
+\bibitem{sunset}
+ENF Solar – Solar Companies and Products, {\em Sunset PX-72}, 1 2016.
+
+\bibitem{pradipkumar2013design}
+P.~Pradipkumar, S.~Ajaykumar, B.~Vaidya, {\em et~al.}, ``Design of dc/dc boost
+  converter for the application of photovoltaic system,'' {\em Global Research
+  Analysis}, vol.~2, no.~4, 2013.
+
+\bibitem{motahhir2020most}
+S.~Motahhir, A.~El~Hammoumi, and A.~El~Ghzizal, ``The most used mppt
+  algorithms: Review and the suitable low-cost embedded board for each
+  algorithm,'' {\em Journal of cleaner production}, vol.~246, p.~118983, 2020.
+
+\bibitem{yang2020comprehensive}
+B.~Yang, T.~Zhu, J.~Wang, H.~Shu, T.~Yu, X.~Zhang, W.~Yao, and L.~Sun,
+  ``Comprehensive overview of maximum power point tracking algorithms of pv
+  systems under partial shading condition,'' {\em Journal of Cleaner
+  Production}, vol.~268, p.~121983, 2020.
+
+\bibitem{tobon2017maximum}
+A.~Tob{\'o}n, J.~Pel{\'a}ez-Restrepo, J.~P. Villegas-Ceballos, S.~I.
+  Serna-Garc{\'e}s, J.~Herrera, and A.~Ibeas, ``Maximum power point tracking of
+  photovoltaic panels by using improved pattern search methods,'' {\em
+  Energies}, vol.~10, no.~9, p.~1316, 2017.
+
+\bibitem{molina2007analisis}
+M.~G. Molina, P.~E. Mercado, and P.~E. Wiernes, ``An{\'a}lisis y simulaci{\'o}n
+  de algoritmos de control para el seguimiento del punto de m{\'a}xima potencia
+  de sistemas solares fotovoltaicos conectados a la red el{\'e}ctrica,'' {\em
+  Avances en energ{\'\i}as renovables y medio ambiente}, vol.~11, 2007.
+
+\bibitem{abdelwahab2020comparative}
+S.~A.~M. Abdelwahab, A.~M. Hamada, and W.~S. Abdellatif, ``Comparative analysis
+  of the modified perturb \& observe with different mppt techniques for pv grid
+  connected systems,'' {\em International journal of renewable energy
+  Research}, vol.~10, no.~1, pp.~55--164, 2020.
+
+\end{thebibliography}

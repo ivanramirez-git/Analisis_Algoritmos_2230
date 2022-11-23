@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: ieeetr.bst
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+Database file #1: mybib.bib
+Warning--empty publisher in vera2013maximum
+Warning--empty year in riveracontrol
+You've used 15 entries,
+            1876 wiz_defined-function locations,
+            563 strings with 6735 characters,
+and the built_in function-call counts, 3780 in all, are:
+= -- 376
+> -- 163
+< -- 0
++ -- 60
+- -- 45
+* -- 274
+:= -- 554
+add.period$ -- 16
+call.type$ -- 15
+change.case$ -- 14
+chr.to.int$ -- 0
+cite$ -- 17
+duplicate$ -- 202
+empty$ -- 335
+format.name$ -- 45
+if$ -- 914
+int.to.chr$ -- 0
+int.to.str$ -- 15
+missing$ -- 12
+newline$ -- 49
+num.names$ -- 14
+pop$ -- 36
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 135
+stack$ -- 0
+substring$ -- 198
+swap$ -- 86
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 35
+width$ -- 17
+write$ -- 150
+(There were 2 warnings)
